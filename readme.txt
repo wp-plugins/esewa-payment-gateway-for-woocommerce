@@ -19,7 +19,7 @@ Tested with WooCommerce version 2.0.20
 eSewa only supports **NPR** currency.
 
 == Installation ==
-=== Installation ===
+= Installation =
 
 1. Download.
 
@@ -29,7 +29,7 @@ eSewa only supports **NPR** currency.
 
 4. Goto Woocommerce -> Settings and select the Payment Gateways tab and click on Esewa just below the tabs.
 
-=== Configure Gateway ===
+= Configure Gateway =
 
 1. Add your 'Merchant ID' which would have been supplied by eSewa.
 
