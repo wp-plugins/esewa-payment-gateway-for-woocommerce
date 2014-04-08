@@ -1,0 +1,147 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: esewa-payment-gateway-for-woocommerce\n"
+"POT-Creation-Date: 2014-04-04 01:29+0545\n"
+"PO-Revision-Date: 2014-04-04 01:30+0545\n"
+"Last-Translator: Nilambar Sharma <nilambar@outlook.com>\n"
+"Language-Team: \n"
+"Language: ne_NP\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.5.4\n"
+"X-Poedit-KeywordsList: _;gettext;gettext_noop;__;_e\n"
+"X-Poedit-Basepath: .\n"
+"X-Poedit-SearchPath-0: ../../esewa-payment-gateway-for-woocommerce\n"
+
+#: ../../esewa-payment-gateway-for-woocommerce/index.php:39
+#: ../../esewa-payment-gateway-for-woocommerce/index.php:104
+#: ../../esewa-payment-gateway-for-woocommerce/index.php:172
+msgid "eSewa"
+msgstr ""
+
+#: ../../esewa-payment-gateway-for-woocommerce/index.php:40
+msgid "eSewa Description"
+msgstr ""
+
+#: ../../esewa-payment-gateway-for-woocommerce/index.php:95
+msgid "Enable/Disable"
+msgstr ""
+
+#: ../../esewa-payment-gateway-for-woocommerce/index.php:97
+msgid "Enable eSewa Payment Method"
+msgstr ""
+
+#: ../../esewa-payment-gateway-for-woocommerce/index.php:101
+msgid "Title"
+msgstr ""
+
+#: ../../esewa-payment-gateway-for-woocommerce/index.php:103
+msgid "This controls the title which the user sees during checkout."
+msgstr ""
+
+#: ../../esewa-payment-gateway-for-woocommerce/index.php:108
+msgid "Customer Message"
+msgstr ""
+
+#: ../../esewa-payment-gateway-for-woocommerce/index.php:110
+msgid "Enter description of payment gateway"
+msgstr ""
+
+#: ../../esewa-payment-gateway-for-woocommerce/index.php:111
+msgid ""
+"eSewa is the first online payment gateway of Nepal. It facilitates its users "
+"to pay and get paid online."
+msgstr ""
+
+#: ../../esewa-payment-gateway-for-woocommerce/index.php:114
+msgid "Merchant ID"
+msgstr ""
+
+#: ../../esewa-payment-gateway-for-woocommerce/index.php:116
+msgid "Enter Merchant ID. Eg. 0000ETM"
+msgstr ""
+
+#: ../../esewa-payment-gateway-for-woocommerce/index.php:118
+msgid "Enter Merchant ID"
+msgstr ""
+
+#: ../../esewa-payment-gateway-for-woocommerce/index.php:121
+msgid "For Developers"
+msgstr ""
+
+#: ../../esewa-payment-gateway-for-woocommerce/index.php:126
+msgid "Test mode"
+msgstr ""
+
+#: ../../esewa-payment-gateway-for-woocommerce/index.php:128
+msgid "Enable Test mode"
+msgstr ""
+
+#: ../../esewa-payment-gateway-for-woocommerce/index.php:130
+msgid "Used for development purpose"
+msgstr ""
+
+#: ../../esewa-payment-gateway-for-woocommerce/index.php:133
+msgid "Debug Log"
+msgstr ""
+
+#: ../../esewa-payment-gateway-for-woocommerce/index.php:135
+msgid "Enable logging"
+msgstr ""
+
+#: ../../esewa-payment-gateway-for-woocommerce/index.php:137
+#, php-format
+msgid "Log eSewa events, inside %swoocommerce/logs/esewa-%s.txt%s"
+msgstr ""
+
+#: ../../esewa-payment-gateway-for-woocommerce/index.php:173
+msgid "eSewa Payment Gateway"
+msgstr ""
+
+#: ../../esewa-payment-gateway-for-woocommerce/index.php:184
+msgid "Gateway Disabled"
+msgstr ""
+
+#: ../../esewa-payment-gateway-for-woocommerce/index.php:184
+msgid "eSewa does not support your store currency."
+msgstr ""
+
+#: ../../esewa-payment-gateway-for-woocommerce/index.php:418
+msgid "eSewa payment successful"
+msgstr ""
+
+#: ../../esewa-payment-gateway-for-woocommerce/index.php:427
+msgid "Error occurred"
+msgstr ""
+
+#: ../../esewa-payment-gateway-for-woocommerce/index.php:513
+msgid ""
+"Thank you for your order. We are now redirecting you to eSewa to make "
+"payment."
+msgstr ""
+
+#: ../../esewa-payment-gateway-for-woocommerce/index.php:536
+msgid "Pay via eSewa"
+msgstr ""
+
+#: ../../esewa-payment-gateway-for-woocommerce/index.php:536
+msgid "Cancel order &amp; restore cart"
+msgstr ""
+
+#: ../../esewa-payment-gateway-for-woocommerce/index.php:602
+msgid ""
+"Thank you for your order, please click the button below to pay with eSewa."
+msgstr ""
+
+#: ../../esewa-payment-gateway-for-woocommerce/index.php:645
+msgid "Payment could not be completed!"
+msgstr ""
+
+#: ../../esewa-payment-gateway-for-woocommerce/index.php:649
+msgid "Payment Successful!"
+msgstr ""
+
+#: ../../esewa-payment-gateway-for-woocommerce/index.php:653
+msgid "View Order"
+msgstr ""
