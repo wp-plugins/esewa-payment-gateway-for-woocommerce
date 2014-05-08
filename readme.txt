@@ -4,7 +4,7 @@ Donate link: http://www.nilambar.net
 Tags: esewa, woocommerce, payment, gateway
 Requires at least: 3.5
 Tested up to: 3.9
-Stable tag: 1.0.0beta
+Stable tag: 1.0.0b
 
 eSewa Payment Gateway for WooCommerce
 
