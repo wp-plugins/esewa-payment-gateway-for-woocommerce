@@ -2,7 +2,7 @@
 /*
    Plugin Name: eSewa Payment Gateway for WooCommerce
    Description: Extends WooCommerce with eSewa payment gateway
-   Version: 1.0.0b
+   Version: 1.0.1
    Plugin URI: http://www.nilambar.net
    Author: Nilambar Sharma
    Author URI: http://www.nilambar.net
@@ -59,7 +59,7 @@ function woocommerce_esewa_init() {
 
       // Logs
       if ( 'yes' == $this->debug )
-        $this->log = $woocommerce->logger();
+        $this->log = new WC_Logger();
 
       // Actions
       add_action( 'valid-esewa-standard-response', array( $this, 'successful_request' ) );
@@ -206,13 +206,15 @@ function woocommerce_esewa_init() {
     function get_esewa_args( $order ) {
       global $woocommerce;
 
+      // nspre($order,'order');
+
       if ( 'yes' == $this->debug )
         $this->log->add( 'esewa', 'Generating payment form for order ' . $order->get_order_number() );
 
       $order_id = $order->id;
 
-      $order_total    = $order -> order_custom_fields['_order_total'][0];
-      $order_key      = $order -> order_custom_fields['_order_key'][0];
+      $order_total    = $order->get_total();
+      $order_key      = $order->id;
 
       $esewa_args['tAmt']  = $order_total;
       $esewa_args['amt']   = $order_total;
@@ -230,6 +232,9 @@ function woocommerce_esewa_init() {
 
 
       $esewa_args = apply_filters( 'woocommerce_esewa_args', $esewa_args );
+
+      // nspre($esewa_args);
+      // die;
 
       return $esewa_args;
     }
@@ -554,7 +559,7 @@ function woocommerce_esewa_init() {
     if (isset($_REQUEST['q'])) {
       if ('fu' == $_REQUEST['q'] ) {
 
-        $woocommerce -> add_error(__( 'Payment could not be completed!', 'esewa-woocommerce' ));
+        wc_add_notice(__( 'Payment could not be completed!', 'esewa-woocommerce' ), 'error' );
 
       }
       if ('su' == $_REQUEST['q'] ) {
@@ -565,7 +570,7 @@ function woocommerce_esewa_init() {
           $msg_content .= __( 'View Order', 'esewa-woocommerce' );
           $msg_content .= '</a>' ;
         }
-        $woocommerce -> add_message( $msg_content );
+        wc_add_notice( $msg_content, 'success' );
       }
     }
 

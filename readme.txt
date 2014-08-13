@@ -3,8 +3,8 @@ Contributors: rabmalin
 Donate link: http://www.nilambar.net
 Tags: esewa, woocommerce, payment, gateway
 Requires at least: 3.5
-Tested up to: 3.9
-Stable tag: 1.0.0b
+Tested up to: 3.9.2
+Stable tag: 1.0.1
 
 eSewa Payment Gateway for WooCommerce
 
@@ -35,7 +35,7 @@ eSewa only supports **NPR** currency.
 
 2. First set Test mode ON and test payment gateway carefully.
 
-3. After testing thoroughly, disable Test mode to go to Live mode. 
+3. After testing thoroughly, disable Test mode to go to Live mode.
 
 == Frequently Asked Questions ==
 = Want to know about eSewa Payment Gateway? =
