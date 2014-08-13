@@ -66,5 +66,9 @@ add_filter('woocommerce_currency_symbol', 'prefix_add_my_currency_symbol', 10, 2
 
 
 == Changelog ==
+
+= Version 1.0.1 =
+* Making compatible to WooCommerce 2.1.12
+
 = Version 1.0.0 =
 * Feature - Initial release
