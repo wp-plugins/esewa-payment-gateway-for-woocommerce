@@ -1,6 +1,6 @@
 === eSewa Payment Gateway for WooCommerce ===
 Contributors: rabmalin
-Donate link: http://www.nilambar.net
+Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=ramrojob1%40gmail%2ecom&lc=US&item_name=Nilambar%20Sharma&currency_code=USD&bn=PP%2dDonationsBF%3abtn_donateCC_LG%2egif%3aNonHosted
 Tags: esewa, woocommerce, payment, gateway
 Requires at least: 3.5
 Tested up to: 4.1
