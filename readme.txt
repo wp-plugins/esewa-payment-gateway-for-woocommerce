@@ -3,18 +3,18 @@ Contributors: rabmalin
 Donate link: http://www.nilambar.net
 Tags: esewa, woocommerce, payment, gateway
 Requires at least: 3.5
-Tested up to: 3.9.2
-Stable tag: 1.0.1
+Tested up to: 4.1
+Stable tag: 1.0.2
 
 eSewa Payment Gateway for WooCommerce
 
 == Description ==
 
-<h3>eSewa Payment Gateway for WooCommerce</h3>Once installed, you can configure this through Woocommerce Payment Gateways tab.
+<h3>eSewa Payment Gateway for WooCommerce</h3>Once installed, you can configure this through Woocommerce Checkout tab.
 
 Test mode is also available in the plugin. It is recommended to test first and only go to Live mode.
 
-Tested with WooCommerce version 2.0.20
+Tested with WooCommerce version 2.2.10
 
 eSewa only supports **NPR** currency.
 
@@ -27,7 +27,7 @@ eSewa only supports **NPR** currency.
 
 3. Activate the plugin through the 'Plugins' menu in WordPress.
 
-4. Goto Woocommerce -> Settings and select the Payment Gateways tab and click on Esewa just below the tabs.
+4. Goto Woocommerce -> Settings and select the Checkout tab and click on Esewa just below the tabs.
 
 = Configure Gateway =
 
@@ -40,25 +40,6 @@ eSewa only supports **NPR** currency.
 == Frequently Asked Questions ==
 = Want to know about eSewa Payment Gateway? =
 Go to official site of [eSewa](http://esewa.com.np) to learn more.
-= How to add NPR currency in WooCommerce site? =
-WooCommerce does not have NPR by default. You can use following code and paste it in `functions.php` of your theme to add NPR currency.
-`
-function prefix_add_my_currency( $currencies ) {
-     $currencies['NPR'] = __( 'Nepali rupee', 'woocommerce' );
-     return $currencies;
-}
-add_filter( 'woocommerce_currencies', 'prefix_add_my_currency' );
-
-
-function prefix_add_my_currency_symbol( $currency_symbol, $currency ) {
-     switch( $currency ) {
-          case 'NPR': $currency_symbol = 'NRs'; break;
-     }
-     return $currency_symbol;
-}
-add_filter('woocommerce_currency_symbol', 'prefix_add_my_currency_symbol', 10, 2);
-
-`
 
 == Screenshots ==
 
@@ -66,6 +47,9 @@ add_filter('woocommerce_currency_symbol', 'prefix_add_my_currency_symbol', 10, 2
 
 
 == Changelog ==
+
+= Version 1.0.2 =
+* Making compatible to WooCommerce 2.2.10 and WP 4.1
 
 = Version 1.0.1 =
 * Making compatible to WooCommerce 2.1.12

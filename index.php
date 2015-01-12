@@ -2,8 +2,8 @@
 /*
    Plugin Name: eSewa Payment Gateway for WooCommerce
    Description: Extends WooCommerce with eSewa payment gateway
-   Version: 1.0.1
-   Plugin URI: http://www.nilambar.net
+   Version: 1.0.2
+   Plugin URI: https://wordpress.org/plugins/esewa-payment-gateway-for-woocommerce/
    Author: Nilambar Sharma
    Author URI: http://www.nilambar.net
    License: Under GPL2
@@ -132,7 +132,7 @@ function woocommerce_esewa_init() {
               'type' => 'checkbox',
               'label' => __( 'Enable logging', 'esewa-woocommerce' ),
               'default' => 'no',
-              'description' => sprintf( __( 'Log eSewa events, inside %swoocommerce/logs/esewa-%s.txt%s', 'esewa-woocommerce' ),
+              'description' => sprintf( __( 'Log eSewa events, inside %swc-logs/esewa-%s.txt%s', 'esewa-woocommerce' ),
                 '<code>',
                 sanitize_file_name( wp_hash( 'esewa' ) ),'</code>'
                 ),
@@ -386,7 +386,7 @@ function woocommerce_esewa_init() {
      */
     function get_esewa_order( $params ) {
 
-      $order_id   = woocommerce_get_order_id_by_order_key( $params['oid'] );
+      $order_id = $params['oid'];
       $order    = new WC_Order( $order_id );
       if (!empty($order)) {
         return $order;
@@ -445,7 +445,7 @@ function woocommerce_esewa_init() {
         $esewa_args_array[] = '<input type="hidden" name="'.esc_attr( $key ).'" value="'.esc_attr( $value ).'" />';
       }
 
-      $woocommerce->add_inline_js( '
+      wc_enqueue_js( '
         jQuery("body").block({
             message: "' . esc_js( __( 'Thank you for your order. We are now redirecting you to eSewa to make payment.', 'esewa-woocommerce' ) ) . '",
             baseZ: 99999,
